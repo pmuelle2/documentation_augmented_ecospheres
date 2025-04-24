@@ -43,5 +43,23 @@ Functions
 Connect to WiFi
 ^^^^^^^^^^^^^^^
 
-Download NAOS helper-tool, move to Application folder and open.
+ 
+Download NAOS helper-tool from here: 
+
+:download:`NAOS <_downloads/audio-box/NAOS.zip>`
+
+Unzip, move it to Application folder and open.
+
+MaxMSP
+^^^^^^
+Download Max external:
+
+:download:`Maxesternal <_downloads/audio-box/audio-box.zip>`
+
+Download example patch:
+
+:download:`Maxpatch <_downloads/audio-box/AudioBox.maxpat>`
+
+
+
 
