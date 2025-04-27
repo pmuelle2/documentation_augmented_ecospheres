@@ -1,7 +1,8 @@
 Introduction
 ============
 
-To collectively work on the documentation:
+This is a place to collectively work, share and document technical workflows.
+It uses the Sphinx environment, the documents are hosted on GitHub, and it can be made public as an webpage through Read the Docs.
 
 Installation, pull, push
 ------------------------
@@ -11,14 +12,14 @@ Installation, pull, push
     .. raw:: html
       <br>
 
-2. Clone the github repository or pull it from the repository: xxx
+2. Clone the GitHub repository or pull it from there: https://github.com/pmuelle2/documentation_augmented_ecospheres
 
  .. raw:: html
       <br>
 
 3. 
 
-    In the Terminal, go to the local folder of the repository and type::
+    In the Terminal, navigate to the local folder of the repository and type::
 
         make html
 
@@ -33,7 +34,7 @@ Installation, pull, push
 
 6. 
 
-    After editing, push the new version to github.
+    After editing, push the new version to GitHub.
 
 Editing an existing page / document
 -----------------------------------
@@ -66,10 +67,9 @@ Adding a new page / document
     If you want to add e.g. a document with the name "audio" as a subpage to the document / page Documentation, open ``documentation.rst`` in the ``source``-folder and add the following text::
 
         .. toctree::
-        :maxdepth: 2
-        :caption: Contents:
+            :maxdepth: 2
 
-        audio
+            audio
 
     or just add the document name in the toctree-list if there is one already.
 

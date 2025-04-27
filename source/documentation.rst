@@ -1,7 +1,7 @@
 Documentation
 =============
 
-Find short documentations to the following topics:
+This is a collection of short documentations and linklists to the following topics:
 
 .. toctree::
    :maxdepth: 2
