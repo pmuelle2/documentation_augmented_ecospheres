@@ -1,0 +1,19 @@
+BOM,augmented ecospheres - schlitternde steine,,,,,,
+,,,,,,,
+,type,desc,u,p/u,p,supplier,
+ordered,mechanics,kugellager 6816-2RS,2,24,48,aliexpress,https://www.123kugellager.ch/kugellager-gehauselager/rillenkugellager/einreihig/6816-2rs?mtm_campaign=CH_-_DE_-_SHP_-_Roulements&gad_source=1&gad_campaignid=20824427881&gbraid=0AAAAAqZwCVmxDQqZTPJ7z9mogvWGYixiO&gclid=CjwKCAjwpOfHBhAxEiwAm1SwEh8ZhZ1E6KGkOTXsBxBxgeqjmQuMPIW2veLGsnxqmkiSzlVEXa1zHRoC8C8QAvD_BwE
+ordered,mechanics,steel flange 8mm,,,9.5,aliexpress,
+ordered,mechanics,steel axle 8mm ,,,5,aliexpress,
+ordered,mechanics,cardan coupling 8mm,,,3.5,aliexpress,
+ordered,mechanics,shaft coupling 8mm,,,5,aliexpress,
+,mechanics,silikonfett,,,,,
+ordered,electronics,esp32,1,25,25,reichelt,https://www.reichelt.com/ch/de/shop/produkt/xiao_esp32s3_plus_dual-core_wifi_bt5_0-395757
+ordered,electronics,wifi router,,,30.7,digitec,https://www.digitec.ch/de/s1/product/tp-link-archer-c54-router-15682239?supplier=406802&utm_source=google&utm_medium=cpc&utm_campaign=PROD_CH_PMAX_M10_C3&campaignid=20563498272&adgroupid=&adid=&dgCidg=CjwKCAjwpOfHBhAxEiwAm1SwEhvjZi4qAImEYvN9s5uWrLasogZZZUqj_fPcMTsem279xCPJdYBUuBoCAFwQAvD_BwE&dgCidg=CjwKCAjwpOfHBhAxEiwAm1SwEhvjZi4qAImEYvN9s5uWrLasogZZZUqj_fPcMTsem279xCPJdYBUuBoCAFwQAvD_BwE&gclsrc=aw.ds&gad_source=1&gad_campaignid=19855479566&gbraid=0AAAAADnW3wa_b0cRePOalHhuAsTKI_cUm&gclid=CjwKCAjwpOfHBhAxEiwAm1SwEhvjZi4qAImEYvN9s5uWrLasogZZZUqj_fPcMTsem279xCPJdYBUuBoCAFwQAvD_BwE
+ordered,electronics,dm430 stepper driver,,,22,reichelt,https://www.reichelt.com/ch/de/shop/suche/dm430?GROUPINDEX=0&search=dm430
+ordered,electronics,nema 23 stepper motor,,,22.5,reichelt,https://www.reichelt.com/ch/de/shop/produkt/hybridschrittmotor_nema_23_1_8_4_2_a_2_52_v-316758
+ordered,electronics,netzgerät 24v,,,45,reichelt,https://www.reichelt.com/ch/de/shop/produkt/schaltnetzteil_geschlossen_100_w_24_v_4_5_a-161682
+ordered,electronics,stepdown 24 - 3.3v,,,5,aliexpress,
+ordered,electronics,IEC Einbaustecker C14,,,1,reichelt,
+ordered,structure,ABS+ 3d druck filament 1Kg,5,16,80,3d jake,https://www.3djake.ch/de-CH/esun/abs-black-6?sai=11800
+,structure,aluminium extrusion 4040 350mm,4,8,32,dold-mechatronik,
+ordered,structure,einschraubfüsse m8,4,2.5,10,aliexpress,https://de.aliexpress.com/item/1005005270124619.html?spm=a2g0o.productlist.main.7.6ee87b3fwop8a4&algo_pvid=55706d2e-5ebc-4c9a-b8df-5eeaf84ce4d3&algo_exp_id=55706d2e-5ebc-4c9a-b8df-5eeaf84ce4d3-6&pdp_ext_f=%7B%22order%22%3A%2290%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21CHF%212.67%210.80%21%21%213.29%210.99%21%40211b613917612846216315810ed82a%2112000032430481095%21sea%21CH%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3A1c4294c3%3Bm03_new_user%3A-29895%3BpisId%3A5000000187639345&curPageLogUid=TrG0EFjye62T&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005005270124619%7C_p_origin_prod%3A
