@@ -1,0 +1,29 @@
+{
+  "serverConfiguration": {
+    "port": 80,
+    "apName": "ESP-StepperMotor-Server",
+    "apPassword": "ServerPassword",
+    "wififMode": 2,
+    "wifiSsid": "",
+    "wifiPassword": "",
+    "motionControllerCpuCore": 0
+  },
+  "stepperConfigurations": [
+    {
+      "id": 0,
+      "name": "schlitterndesteine",
+      "stepPin": 3,
+      "directionPin": 4,
+      "stepsPerRev": 200,
+      "stepsPerMM": 1,
+      "microsteppingDivisor": 32,
+      "rpmLimit": 2,
+      "breakPin": 255,
+      "breakPinActiveState": 1,
+      "breakEngageDelay": 0,
+      "breakReleaseDelay": -1
+    }
+  ],
+  "switchConfigurations": [],
+  "rotaryEncoderConfigurations": []
+}
