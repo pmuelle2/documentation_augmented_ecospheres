@@ -3,8 +3,8 @@
 
 ESPStepperMotorServer *stepperMotorServer;
 
-const char *wifiName= "SSID"; // enter the SSID of the wifi network to connect to
-const char *wifiSecret = "PW"; // enter the password of the the existing wifi network here
+const char *wifiName= "AE_Instruments"; // enter the SSID of the wifi network to connect to
+const char *wifiSecret = "XXXXXXX"; // enter the password of the the existing wifi network here
 
 void setup() 
 {
