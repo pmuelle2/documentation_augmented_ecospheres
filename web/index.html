@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Augmented Ecospheres</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      color: #111;
+      background: #fff;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+    }
+
+    .image-panel {
+      width: 50%;
+      min-height: 100vh;
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+    }
+
+    .image-panel img {
+      width: 100%;
+      height: 100%;
+      min-height: 100vh;
+      object-fit: cover;
+      display: block;
+    }
+
+    .image-title {
+      position: absolute;
+      left: clamp(1rem, 3vw, 3rem);
+      right: clamp(1rem, 3vw, 3rem);
+      top: clamp(1.5rem, 5vw, 5rem);
+      z-index: 1;
+      margin: 0;
+      color: #fff;
+      font-size: clamp(2.25rem, 6vw, 6rem);
+      line-height: 0.95;
+      font-weight: 800;
+      letter-spacing: 0;
+      mix-blend-mode: difference;
+      overflow-wrap: anywhere;
+    }
+
+    .text-panel {
+      width: 50%;
+      max-height: 100vh;
+      overflow-y: auto;
+      padding: 4rem;
+      position: relative;
+    }
+
+    .language-toggle {
+      display: inline-flex;
+      gap: 0.5rem;
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+    }
+
+    .language-toggle button {
+      border: 0;
+      background: transparent;
+      color: #111;
+      padding: 0;
+      font: inherit;
+      line-height: 1;
+      cursor: pointer;
+    }
+
+    .language-toggle button[aria-pressed="true"] {
+      text-decoration: underline;
+      text-underline-offset: 0.18em;
+    }
+
+    .language-toggle button:focus-visible,
+    a:focus-visible {
+      outline: 2px solid #111;
+      outline-offset: 0.25rem;
+    }
+
+    .language-panel[hidden] {
+      display: none;
+    }
+
+    .text-panel p {
+      max-width: 42rem;
+      font-size: 1.1rem;
+      margin: 0 0 1.4rem;
+    }
+
+    .text-panel p:last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: #111;
+      background-color: #bfe7f3;
+      text-decoration: underline;
+      text-decoration-thickness: 0.08em;
+      text-decoration-color: #bfe7f3;
+      text-underline-offset: 0.16em;
+      transition:
+        background-color 180ms ease,
+        color 180ms ease,
+        text-decoration-color 180ms ease;
+    }
+
+    a:hover,
+    a:focus {
+      color: #111;
+      background-color: #fff;
+      text-decoration-color: #bfe7f3;
+      text-decoration-thickness: 0.12em;
+    }
+
+    @media (max-width: 900px) {
+      .page {
+        display: block;
+      }
+
+      .image-panel,
+      .text-panel {
+        width: 100%;
+      }
+
+      .image-panel {
+        min-height: 60vh;
+      }
+
+      .image-panel img {
+        height: 60vh;
+        min-height: 60vh;
+      }
+
+      .image-title {
+        font-size: clamp(2.5rem, 14vw, 5.5rem);
+      }
+
+      .text-panel {
+        max-height: none;
+        overflow: visible;
+        padding: 2rem;
+      }
+
+      .language-toggle {
+        top: 1rem;
+        right: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <section class="image-panel" aria-label="Featured image">
+      <img
+        src="./img.webp"
+        alt="Detail from one of the Im Griess sound machines, showing rocks on small ledges on ice."
+      />
+      <h1 class="image-title">Augmented Ecospheres</h1>
+    </section>
+
+    <section class="text-panel">
+      <nav class="language-toggle" aria-label="Language">
+        <button type="button" data-language-button="de" aria-pressed="true">DE</button>
+        <button type="button" data-language-button="en" aria-pressed="false">EN</button>
+      </nav>
+
+      <div class="language-panel" data-language-panel="de" lang="de">
+        <p>
+          Die Gruppe Augmented Ecospheres vereint Wissenschaftler*innen und Künstler*innen aus Komposition, Design, Fotografie, Theater, Performance, Umweltpsychologie, Nachhaltigkeitskommunikation und Transformationsforschung. Gemeinsam erforscht sie mit künstlerischen und vermittelnden Strategien die Gegenwart der Klimakatastrophe - mit dem Ziel, deren Dringlichkeit unmittelbar erfahrbar zu machen.
+        </p>
+
+        <p>
+          Das kunstbasierte, transdisziplinäre Forschungsprojekt bewegt sich an der Schnittstelle von Umweltbildung und immersiven Technologien. Im Fokus steht der Klimawandel entlang eines konkreten geografischen Verlaufs: vom Gletschersee Griessseeli unterhalb des Clariden-Gletschers über den Linthkanal bis zum Zürichsee. Thematisiert werden dabei unter anderem Gletscherschwund, tauender Permafrost, veränderte Wasserregime und verschwindende Landschaften. Fragen der Zeitlichkeit spielen eine zentrale Rolle - sowohl durch den Einsatz von Echtzeitmedien als auch durch die Auseinandersetzung mit dem Katastrophischen in einer forschenden, iterativen Praxis.
+        </p>
+
+        <p>
+          <a href="https://www.extraleben.ch/projects/im-griess">«Im Griess»</a> ist der erste öffentlich vorgestellte Prototyp des Projekts Augmented Ecospheres (2025-2027), gefördert durch die <a href="https://www.dizh.uzh.ch/en/2024/04/11/augmented-ecospheres-2/">Digitalisierungsinitiative der Zürcher Hochschulen (DIZH)</a>. Er wurde vom 1. - 3. Mai 2026 im Kulturhaus Helferei in Zürich gezeigt und zog in drei Tagen über 1000 Besucher*innen an.
+        </p>
+
+        <p>
+          Für Anfragen kontaktieren Sie uns unter
+          <a href="mailto:info@aug.eco">info@aug.eco</a>
+        </p>
+
+        <p>
+          Die Forschungsgruppe Augmented Ecospheres besteht aus Petra Bättig-Frey (ZHAW), Monica Ursina Jäger (ZHAW), Somara Gantenbein (ZHAW), Patrick Müller (ZHdK), Benjamin Burger (ZHdK), Florian Amoser (ZHdK), Joel De Giovanni (ZHdK), Eva Maria Spreitzer (ZHdK) und Gary Berger (ZHdK).
+        </p>
+      </div>
+
+      <div class="language-panel" data-language-panel="en" lang="en" hidden>
+        <p>
+          The Augmented Ecospheres group brings together scientists and artists from composition, design, photography, theatre, performance, environmental psychology, sustainability communication and transformation research. Together, they explore the present reality of the climate crisis through artistic and mediating strategies, with the aim of making its urgency directly tangible.
+        </p>
+
+        <p>
+          This arts-based, transdisciplinary research project operates at the intersection of environmental education and immersive technologies. Its focus is the climate crisis along a specific geographical trajectory: from Lake Griess below the Clariden Glacier, along the Linth Canal, to Lake Zurich. Topics addressed include glacial retreat, thawing permafrost, changing water regimes and disappearing landscapes. Questions of temporality play a central role, both through the use of real-time media and through engagement with the catastrophic in an exploratory, iterative practice.
+        </p>
+
+        <p>
+          <a href="https://www.extraleben.ch/projects/im-griess">«Im Griess»</a> is the first public prototype of the Augmented Ecospheres project (2025-2027), funded by the <a href="https://www.dizh.uzh.ch/en/2024/04/11/augmented-ecospheres-2/">Digitalisation Initiative of the Zurich Higher Education Institutions (DIZH)</a>. It was presented at Kulturhaus Helferei in Zurich from 1 - 3 May 2026 and attracted over 1,000 visitors in three days.
+        </p>
+
+        <p>
+          For inquiries, contact us at
+          <a href="mailto:info@aug.eco">info@aug.eco</a>
+        </p>
+
+        <p>
+          The Augmented Ecospheres research group consists of Petra Bättig-Frey (ZHAW), Monica Ursina Jäger (ZHAW), Somara Gantenbein (ZHAW), Patrick Müller (ZHdK), Benjamin Burger (ZHdK), Florian Amoser (ZHdK), Joel De Giovanni (ZHdK), Eva Maria Spreitzer (ZHdK) and Gary Berger (ZHdK).
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const languageButtons = document.querySelectorAll("[data-language-button]");
+    const languagePanels = document.querySelectorAll("[data-language-panel]");
+
+    function setLanguage(language) {
+      languageButtons.forEach((button) => {
+        button.setAttribute("aria-pressed", String(button.dataset.languageButton === language));
+      });
+
+      languagePanels.forEach((panel) => {
+        panel.hidden = panel.dataset.languagePanel !== language;
+      });
+
+      document.documentElement.lang = language;
+    }
+
+    languageButtons.forEach((button) => {
+      button.addEventListener("click", () => setLanguage(button.dataset.languageButton));
+    });
+
+    setLanguage(navigator.language.toLowerCase().startsWith("de") ? "de" : "en");
+  </script>
+</body>
+</html>
